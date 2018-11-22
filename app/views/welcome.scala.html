@@ -2,27 +2,267 @@
 
 @defining(play.core.PlayVersion.current) { version =>
 
-<section id="top">
-  <div class="wrapper">
-    <h1><a href="https://playframework.com/documentation/@version/Home">@message</a></h1>
+  <div class="banner">
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header navbar-left">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="w3_navigation_pos">
+            <h1><a href="index.html"><span>fh</span></a></h1>
+          </div>
+        </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+          <nav class="link-effect-2" id="link-effect-2">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="index.html" class="scroll"><span data-hover="Home">Home</span></a></li>
+              <li><a href="#services" class="scroll"><span data-hover="Services">Services</span></a></li>
+              <li><a href="#portfolio" class="scroll"><span data-hover="Portfolio">Portfolio</span></a></li>
+              <li><a href="#contact" class="scroll"><span data-hover="Contact">Login</span></a></li>
+              <li><a href="#contact" class="scroll"><span data-hover="Contact">Sign Up</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </nav>
+    <div class="banner-info">
+      <div class="container">
+        <div class="slider">
+          <div class="callbacks_container">
+            <ul class="rslides" id="slider4">
+              <li>
+                <div class="w3ls-text">
+                  <h5>Welcome to FarmHands</h5>
+                  <h3>Livestock Protection with your Smartphone.</h3>
+                  <p>Automatically Detect Chronic Diseases
+                    Through Retinal Scans with our Prediction Engine.</p>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+          <script src="js/responsiveslides.min.js"></script>
+          <script>
+            // You can also use "$(window).load(function()"
+            $(function () {
+              // Slideshow 4
+              $("#slider4").responsiveSlides({
+                auto: true,
+                pager:true,
+                nav:true,
+                speed: 500,
+                namespace: "callbacks",
+                before: function () {
+                  $('.events').append("<li>before event fired.</li>");
+                },
+                after: function () {
+                  $('.events').append("<li>after event fired.</li>");
+                }
+              });
+
+            });
+          </script>
+            <!--banner Slider starts Here-->
+        </div>
+      </div>
+      <div class="banner-bottom">
+        <div class="container">
+          <div class="col-md-4 col-sm-4 agile-banner-bottom-grid1 b1">
+            <h3>Computer Aided diagnosis</h3>
+            <p>Upload an image of your livestock retina and our diagnose engine will tell if there could be a possibility
+              for a diseas in the upcoming future. You only need your smartphone for doing so. No extra App needed.</p>
+          </div>
+          <div class="col-md-4 col-sm-4 agile-banner-bottom-grid1 b2">
+            <h3>Collect your Data</h3>
+            <p>With our new ISO-BUS we can connect your farm devices and collect the data they are producing.
+              We analyse and enrich this data and provide you an easy to understand overview. All your devices in one App.</p>
+          </div>
+          <div class="col-md-4 col-sm-4 agile-banner-bottom-grid1">
+            <h3>Analyse and Predicit</h3>
+            <p>With our predictive analysis engine we will help you to bring out the best of your farm. Our generated dashboards will provide you an overview of what you did great and ho we can improve your performance.</p>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+
+
+    </div>
   </div>
-</section>
 
-<div id="content" class="wrapper doc">
+  <!-- portfolio -->
+  <div class="jarallax wthreelocationsaits agile-section" id="portfolio">
+    <div class="container">
+      <h3 class="agileits-title text-center">portfolio</h3>
+      <section class="grid3d vertical" id="grid3d">
+        <div class="grid-wrap">
+          <div class="grid">
+            <figure class="col-md-4 effect-zoe"><img src="@routes.Assets.versioned("images/g1.jpg")" alt="Odyssey"><figcaption><h4>CROPS</h4></figcaption></figure>
+            <figure class="col-md-4 effect-zoe"><img src="@routes.Assets.versioned("images/g7.jpg")" alt="Odyssey"><figcaption><h4>PLOUGH</h4></figcaption></figure>
+            <figure class="col-md-4 effect-zoe"><img src="@routes.Assets.versioned("images/g3.jpg")" alt="Odyssey"><figcaption><h4>LIVESTOCK</h4></figcaption></figure>
+            <figure class="col-md-4 effect-zoe"><img src="@routes.Assets.versioned("images/g4.jpg")" alt="Odyssey"><figcaption><h4>FARMING</h4></figcaption></figure>
+            <figure class="col-md-4 effect-zoe"><img src="@routes.Assets.versioned("images/g5.jpg")" alt="Odyssey"><figcaption><h4>GRAINS</h4></figcaption></figure>
+            <figure class="col-md-4 effect-zoe"><img src="@routes.Assets.versioned("images/g6.jpg")" alt="Odyssey"><figcaption><h4>RAISING</h4></figcaption></figure>
+           </div>
+        </div>
+        <div class="content">
+          <div>
+            <div class="dummy-img dummy-img-1"><img src="images/g1.jpg" alt="Odyssey"></div>
+            <p class="dummy-text aitsheadingw3">CROPS</p>
+            <p class="dummy-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div>
+            <div class="dummy-img dummy-img-2"><img src="images/g7.jpg" alt="Odyssey"></div>
+            <p class="dummy-text aitsheadingw3">PLOUGH</p>
+            <p class="dummy-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div>
+            <div class="dummy-img dummy-img-3"><img src="images/g3.jpg" alt="Odyssey"></div>
+            <p class="dummy-text aitsheadingw3">LIVESTOCK</p>
+            <p class="dummy-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div>
+            <div class="dummy-img dummy-img-4"><img src="images/g4.jpg" alt="Odyssey"></div>
+            <p class="dummy-text aitsheadingw3">FARMING</p>
+            <p class="dummy-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div>
+            <div class="dummy-img dummy-img-5"><img src="images/g5.jpg" alt="Odyssey"></div>
+            <p class="dummy-text aitsheadingw3">GRAINS</p>
+            <p class="dummy-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div>
+            <div class="dummy-img dummy-img-6"><img src="images/g1.jpg" alt="Odyssey"></div>
+            <p class="dummy-text aitsheadingw3">RAISING</p>
+            <p class="dummy-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div>
+            <div class="dummy-img dummy-img-7"><img src="images/g2.jpg" alt="Odyssey"></div>
+            <p class="dummy-text aitsheadingw3">PADDY</p>
+            <p class="dummy-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div>
+            <div class="dummy-img dummy-img-8"><img src="images/g7.jpg" alt="Odyssey"></div>
+            <p class="dummy-text aitsheadingw3">CROPS</p>
+            <p class="dummy-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div>
+            <div class="dummy-img dummy-img-9"><img src="images/g6.jpg" alt="Odyssey"></div>
+            <p class="dummy-text aitsheadingw3">GRAINS</p>
+            <p class="dummy-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <span class="loading"></span>
+          <span class="icon close-content"><i class="fa fa-times" aria-hidden="true"></i></span>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- //portfolio -->
+
+  <!-- services -->
+  <div class="jarallax agileits-services agile-section" id="services">
+    <div class="container">
+      <h3 class="agileits-title text-center">services</h3>
+      <div class="w3agile-services text-center">
+        <div class="col-md-3 w3_agileits-service-grid">
+          <span class="w3ls-icon fa fa-truck" aria-hidden="true"></span>
+          <h4>Our Features</h4>
+          <p>With our platform you will be able to collaborate with other agricultural workers around the world.</p>
+        </div>
+        <div class="col-md-3 w3_agileits-service-grid sr1">
+          <span class="w3ls-icon fa fa-cog" aria-hidden="true"></span>
+          <h4>Share value</h4>
+          <p>Wouldn't it be great to share your values with colleagues around the world to help them improving.</p>
+        </div>
+        <div class="col-md-3 w3_agileits-service-grid sr2">
+          <span class="w3ls-icon fa fa-tint" aria-hidden="true"></span>
+          <h4>Share devices</h4>
+          <p>We will also provide an exchange app for reusing and sharing the really expensive agricultural devices.</p>
+        </div>
+        <div class="col-md-3 w3_agileits-service-grid">
+          <span class="w3ls-icon fa fa-pagelines" aria-hidden="true"></span>
+          <h4>Share knowledge</h4>
+          <p>With our new data collector and predictive engine we will let you know what happens tomorrow.</p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+  <!-- //services -->
 
 
-<aside>
-  <h3>Start discovering</h3>
-  <ul>
-    <li><a href="">Login</a></li>
-    <li><a href="">Sign Up</a></li>
+  <!-- footer -->
+  <div class="agileits_w3layouts-footer">
+    <div class="col-md-6  agileinfo-copyright">
+      <p>© 2018 FarmHands. All rights reserved | Design by <a href="//w3layouts.com/">W3layouts</a></p>
+    </div>
 
-  </ul>
+  </div>
+  <!-- //footer -->
+  <!--portfolio-JavaScript -->
+  <script src="@routes.Assets.versioned("javascripts/classie.js")" type="text/javascript"></script>
+  <script src="@routes.Assets.versioned("javascripts/helper.js")" type="text/javascript"></script>
+  <script src="@routes.Assets.versioned("javascripts/grid3d.js")" type="text/javascript"></script>
 
+  <script>
+    new grid3D( document.getElementById( 'grid3d' ) );
+  </script>
+  <!-- portfolio-JavaScript -->
+  <script src="@routes.Assets.versioned("javascripts/jarallax.js")" type="text/javascript"></script>
+  <script src="@routes.Assets.versioned("javascripts/SmoothScroll.min.js")" type="text/javascript"></script>
 
+  <script type="text/javascript">
+    /* init Jarallax */
+    $('.jarallax').jarallax({
+      speed: 0.5,
+      imgWidth: 1366,
+      imgHeight: 768
+    })
+  </script>
+  <!-- here starts scrolling icon -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      /*
+                  var defaults = {
+                  containerID: 'toTop', // fading element id
+                  containerHoverID: 'toTopHover', // fading element hover id
+                  scrollSpeed: 1200,
+                  easingType: 'linear'
+                  };
+              */
 
-  
-</aside>
+      $().UItoTop({ easingType: 'easeOutQuart' });
 
-</div>
+    });
+  </script>
+
+  <!-- start-smoth-scrolling -->
+  <script src="@routes.Assets.versioned("javascripts/move-top.js")" type="text/javascript"></script>
+  <script src="@routes.Assets.versioned("javascripts/easing.js")" type="text/javascript"></script>
+
+<script type="text/javascript">
+  jQuery(document).ready(function($) {
+    $(".scroll").click(function(event){
+      event.preventDefault();
+      $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+    });
+  });
+</script>
+  <!-- /ends-smoth-scrolling -->
+  <!-- //here ends scrolling icon -->
+
 }
+
+
+
+
+
+
+
+
+
