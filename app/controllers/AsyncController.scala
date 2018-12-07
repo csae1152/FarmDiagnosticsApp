@@ -18,7 +18,7 @@ import scala.concurrent.{ExecutionContext, Future, Promise}
  * run code after a delay.
  * @param exec We need an `ExecutionContext` to execute our
  * asynchronous code.  When rendering content, you should use Play's
- * default execution context, which is dependency injected.  If you are
+ * farmdiagnosticsdb execution context, which is dependency injected.  If you are
  * using blocking operations, such as database or network access, then you should
  * use a different custom execution context that has a thread pool configured for
  * a blocking API.

@@ -137,6 +137,7 @@
               </div>
               <div class="col-md-4 market-update-right">
                 <i class="fa fa-file-text-o"> </i>
+
               </div>
               <div class="clearfix"> </div>
             </div>
@@ -144,12 +145,19 @@
           <div class="col-md-4 market-update-gd">
             <div class="market-update-block clr-block-2">
               <div class="col-md-8 market-update-left">
-                <h3>4</h3>
-                <h4>New diseas found</h4>
-                <p>Upload your Image here</p>
+                <h3>Diseas</h3>
+
               </div>
+              @helper.form(action = routes.ScalaFileUploadController.upload, 'enctype -> "multipart/form-data") {
+
+              <input type="file" name="picture" >
+
+              <p>
+                <input type="submit" value="Start analysing">
+              </p>
+
+              }
               <div class="col-md-4 market-update-right">
-                <i class="fa fa-eye"> </i>
               </div>
               <div class="clearfix"> </div>
             </div>
@@ -158,7 +166,7 @@
             <div class="market-update-block clr-block-3">
               <div class="col-md-8 market-update-left">
                 <h3>23</h3>
-                <h4>Corps Predictions</h4>
+                <h4>Crops Predictions</h4>
                 <p>Go to Charts</p>
               </div>
               <div class="col-md-4 market-update-right">

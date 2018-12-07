@@ -36,7 +36,7 @@ class PersonRepository @Inject() (dbConfigProvider: DatabaseConfigProvider)(impl
     def age = column[Int]("age")
 
     /**
-      * This is the tables default "projection".
+      * This is the tables farmdiagnosticsdb "projection".
       *
       * It defines how the columns are converted to and from the Person object.
       *

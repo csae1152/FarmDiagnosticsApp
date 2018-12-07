@@ -17,6 +17,8 @@ GET     /message                    controllers.AsyncController.message
 POST    /person                     controllers.PersonController.addPerson
 GET     /persons                    controllers.PersonController.getPersons
 
+POST  /          controllers.ScalaFileUploadController.upload()
+
 GET     /favicon.ico    controllers.Assets.at(path="/public/images", file="farmhandsicon.png")
 
 # Map static resources from the /public folder to the /assets URL path
