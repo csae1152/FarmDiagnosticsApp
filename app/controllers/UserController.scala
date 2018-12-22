@@ -6,7 +6,6 @@ import play.api.mvc.{Action, Controller}
 import play.api.libs.json._
 import play.api.cache._
 
-
 class UserController @Inject() (cache: CacheApi) extends Controller {
   def AuthenticatedAction(f: Request[AnyContent] => Result): Action[AnyContent] = {
     Action { request =>

@@ -1,5 +1,4 @@
 @import play.api.libs.json.JsValue
-
 @(profile: JsValue)
 
 @main("FarmDiagnostics - Dashboard") {
@@ -148,14 +147,13 @@
                 <h3>Diseas</h3>
 
               </div>
+              @helper.form(action = routes.ScalaFileUploadController.upload, 'enctype -> "multipart/form-data") {
+                <input type="file" name="retina_image" value="Upload Image" />
 
-              <input type="file" name="picture" >
-
-              <p>
-                <input type="submit" value="Start analysing">
-              </p>
-
-
+                <p>
+                  <input type="submit" name="start" value="Start analysing" />
+                </p>
+              }
               <div class="col-md-4 market-update-right">
               </div>
               <div class="clearfix"> </div>
