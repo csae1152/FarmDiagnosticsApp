@@ -6,6 +6,7 @@ lazy val `farmdiagnostics` = (project in file(".")).enablePlugins(PlayScala, Pla
 
 resolvers += "scalaz-bintray" at "https://dl.bintray.com/scalaz/releases"
 resolvers += "Akka Snapshot Repository" at "http://repo.akka.io/snapshots/"
+resolvers += Resolver.bintrayRepo("cibotech", "public")
 
 scalaVersion := "2.12.2"
 
@@ -23,6 +24,13 @@ libraryDependencies ++= Seq(
   "org.postgresql" % "postgresql" % "42.1.4",
   "com.typesafe.akka" %% "akka-stream" % "2.5.8",
   "com.typesafe.akka" %% "akka-stream-kafka" % "0.22",
+  "com.cibo" %% "scalastan" % "0.8.1",
+  "com.google.api-client" % "google-api-client" % "1.27.0",
+  "com.google.oauth-client" % "google-oauth-client" % "1.27.0",
+  "com.google.apis" % "google-api-services-drive" % "v3-rev136-1.25.0",
+  "com.google.api-client" % "google-api-client-java6" % "1.27.0",
+  "com.google.oauth-client" % "google-oauth-client-jetty" % "1.27.0",
+  "com.stripe" %% "rainier-core" % "0.2.0",
   "org.deeplearning4j" % "deeplearning4j-core" % "0.0.3.1",
   "org.nd4j" % "nd4j" % "0.9.1" pomOnly(),
   "org.apache.spark" %% "spark-core" % "2.4.0",

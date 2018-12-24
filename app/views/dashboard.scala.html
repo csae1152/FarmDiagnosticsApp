@@ -148,12 +148,20 @@
 
               </div>
               @helper.form(action = routes.ScalaFileUploadController.upload, 'enctype -> "multipart/form-data") {
+                <input type="file" name="picture" >
+
+                <p>
+                  <input type="submit" value="Start analysing">
+                </p>
+              }
+
                 <input type="file" name="retina_image" value="Upload Image" />
 
                 <p>
                   <input type="submit" name="start" value="Start analysing" />
                 </p>
               }
+
               <div class="col-md-4 market-update-right">
               </div>
               <div class="clearfix"> </div>
