@@ -1,17 +1,18 @@
 package controllers
 
+import java.math.BigInteger
+import java.security.SecureRandom
+import java.util.UUID.randomUUID
+
 import helpers.Auth0Config
 import javax.inject._
-import play.api.mvc._
 import play.api.cache._
-
-import java.security.SecureRandom
-import java.math.BigInteger
-import java.util.UUID.randomUUID
+import play.api.mvc._
 /**
  * This controller creates an `Action` to handle HTTP requests to the
  * application's home page.
  */
+
 @Singleton
 class HomeController @Inject()(cache: AsyncCacheApi, cc: ControllerComponents) extends AbstractController(cc) {
 
@@ -60,10 +61,9 @@ class HomeController @Inject()(cache: AsyncCacheApi, cc: ControllerComponents) e
       /**
         * TODO Change returnTo parameter
         */
-      "https://%s/v2/logout?client_id=%s&returnTo=http://localhost:9000/",
+      "https://%s/v2/logout?client_id=%s&returnTo=https://farmdiagnostics.herokuapp.com/",
       config.domain,
       config.clientId)
     ).withNewSession
   }
-
 }
