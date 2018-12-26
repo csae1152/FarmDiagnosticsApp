@@ -14,3 +14,5 @@ Based on AKKA cluster.
 
 Java 11.
 
+Functional approach done with Scalaz.
+
