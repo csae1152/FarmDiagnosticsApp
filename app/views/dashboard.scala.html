@@ -143,24 +143,62 @@
             </div>
           </div>
           <div class="col-md-4 market-update-gd">
+
+
             <div class="market-update-block clr-block-2">
               <div class="col-md-8 market-update-left">
                 <h3>Diseas</h3>
 
               </div>
-              @helper.form(action = routes.ScalaFileUploadController.upload, 'enctype -> "multipart/form-data") {
-                <input type="file" name="picture" >
 
-                <p>
-                  <input type="submit" value="Start analysing">
-                </p>
-              }
+              <input type="file" name="picture" >
+
+              <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Start Prediction</button>
+
+              <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                     <h4><font color="black">RESULTS: </font></h4>
+                    </div>
+                    <div class="modal-body">
+                      <p><font color="black">
+                        <ul>
+                          <li>Anaplasmosis</li>
+                          <li>Avian Paramyxovirus Type 1</li>
+                          <li>Cattle tick – Notify within 12 hours</li>
+                          <li>Cysticercosis bovis (Taenia saginata)</li>
+                          <li>Enzootic bovine leucosis</li>
+                          <li>Pullorum disease (Salmonella pullorum) – Notify within 12 hours</li>
+                          <li>Infectious laryngotracheitis – Notify within 12 hours</li>
+                          <li>Swine brucellosis (Brucella suis) – Notify within 12 hours</li>
+                          <li>Trichomoniasis</li>
+
+                        </ul>
+                       </font></p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Contact Vet</button>
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
 
               <div class="col-md-4 market-update-right">
               </div>
               <div class="clearfix"> </div>
             </div>
+
+
           </div>
+
+
+
           <div class="col-md-4 market-update-gd">
             <div class="market-update-block clr-block-3">
               <div class="col-md-8 market-update-left">
