@@ -1,5 +1,4 @@
 @import play.api.libs.json.JsValue
-
 @(profile: JsValue)
 
 @main("FarmDiagnostics - Dashboard") {
@@ -188,6 +187,13 @@
 
                 </div>
               </div>
+
+                <input type="file" name="retina_image" value="Upload Image" />
+
+                <p>
+                  <input type="submit" name="start" value="Start analysing" />
+                </p>
+              }
 
               <div class="col-md-4 market-update-right">
               </div>
