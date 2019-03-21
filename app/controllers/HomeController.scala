@@ -28,7 +28,9 @@ class HomeController @Inject()(cache: AsyncCacheApi, cc: ControllerComponents) e
 
   def login = Action {
     val config = Auth0Config.get()
-    // Generate random state parameter
+    /**
+     *  generate random string
+     */
     object RandomUtil {
       private val random = new SecureRandom()
 
@@ -61,7 +63,7 @@ class HomeController @Inject()(cache: AsyncCacheApi, cc: ControllerComponents) e
       /**
         * TODO Change returnTo parameter
         */
-      "https://%s/v2/logout?client_id=%s&returnTo=https://farmdiagnostics.herokuapp.com/",
+      "https://%s/v2/logout?client_id=%s&returnTo=http://localhost:9000",
       config.domain,
       config.clientId)
     ).withNewSession

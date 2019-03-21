@@ -16,7 +16,6 @@ GET     /message                    controllers.AsyncController.message
 
 POST    /upload                     controllers.GoogleDriveController.upload
 
-
 POST    /person                     controllers.PersonController.addPerson
 GET     /persons                    controllers.PersonController.getPersons
 
