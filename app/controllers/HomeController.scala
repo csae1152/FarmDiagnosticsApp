@@ -26,6 +26,11 @@ class HomeController @Inject()(cache: AsyncCacheApi, cc: ControllerComponents) e
    Ok(views.html.index("Welcome to Farm Diagnostics."))
   }
 
+  def offline() = Action {
+    implicit request: Request[AnyContent] =>
+      Ok(views.html.index("No Wifi connection."))
+  }
+
   def login = Action {
     val config = Auth0Config.get()
     /**
