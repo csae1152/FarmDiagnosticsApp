@@ -12,7 +12,7 @@ Datastore: PostgreSQL and Scala Slick.
 
 Based on AKKA cluster.
 
-Java 11.
+Java 12.
 
 Functional approach done with Scalaz.
 
