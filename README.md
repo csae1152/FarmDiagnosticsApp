@@ -8,7 +8,7 @@ Automatically Detect Chronic Diseases Through Retinal Scans with our Prediction 
 
 Build with Scala/Java and Play Framework.
 
-Datastore: PostgreSQL and Scala Slick.
+Datastore: PostgreSQL, Neo4J and Scala Slick.
 
 Based on AKKA cluster.
 
