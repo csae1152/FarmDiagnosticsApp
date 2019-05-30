@@ -10,7 +10,7 @@ Build with Scala/Java and Play Framework.
 
 Datastore: PostgreSQL and Scala Slick.
 
-Based on AKKA cluster.
+Based on SQUBS cluster.
 
 Java 12.
 
